@@ -2,8 +2,6 @@
 node_modules
 .next
 .git
-Dockerfile
-docker-compose.yml
 # dependencies
 /node_modules
 /.pnp

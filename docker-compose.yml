@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  sevoil:
+    container_name: sevoil-app
+    build: .
+    restart: always
+    ports:
+      - "3004:3004"
+    networks:
+      - dokploy-network
+
+networks:
+  dokploy-network:
+    external: true
