@@ -19,6 +19,7 @@ ENV NODE_ENV=production
 
 COPY --from=builder /app ./
 
-EXPOSE 3000
+EXPOSE 3004
+ENV PORT=3004
 
 CMD ["npm", "start"]

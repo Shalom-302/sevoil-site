@@ -5,10 +5,19 @@ services:
     container_name: sevoil-app
     build: .
     restart: always
+
     ports:
-      - "3004:3000"
+      - "3004:3004"
+
     networks:
       - dokploy-network
+
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:3004"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
 
 networks:
   dokploy-network:
