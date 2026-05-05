@@ -1,36 +1,40 @@
-/* app/globals.css */
 @import "tailwindcss";
 
 @theme {
-  --color-sevoil-dark: #004A61;
-  --color-sevoil-primary: #005B7F;
-  --color-sevoil-light: #F4F7F9;
-  --color-sevoil-accent: #00A3C4;
-  
+  --color-sevoil-dark: #0C4A6E;
+  --color-sevoil-primary: #0284C7;
+  --color-sevoil-light: #F0F9FF;
+  --color-sevoil-accent: #38BDF8;
+  --color-sevoil-lime: #A3E635;
+  --color-sevoil-lime-deep: #84CC16;
+
   --font-serif: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
 }
 
-/* Optionnel : Adoucir les transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
 * {
   @apply transition-colors duration-200;
 }
 
-/* Personnalisation de la barre de défilement pour les tableaux */
 .overflow-x-auto::-webkit-scrollbar {
   height: 6px;
 }
-
 .overflow-x-auto::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 10px;
 }
-
 .overflow-x-auto::-webkit-scrollbar-thumb {
-  background: #004A61; /* Ta couleur sevoil-dark */
+  background: #0c4a6e;
   border-radius: 10px;
 }
-
 .overflow-x-auto::-webkit-scrollbar-thumb:hover {
-  background: #005B7F;
+  background: #0284c7;
 }

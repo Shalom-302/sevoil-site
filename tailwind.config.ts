@@ -8,15 +8,17 @@ const config = {
     extend: {
       colors: {
         sevoil: {
-          dark: '#004A61',    // Le bleu profond des titres
-          primary: '#005B7F', // Le bleu des boutons
-          light: '#F4F7F9',   // Le gris de fond de page
-          accent: '#00A3C4',  // Bleu ciel pour les badges
+          dark: "#0C4A6E",      // sky-900 — deep brand
+          primary: "#0284C7",   // sky-600 — primary actions
+          light: "#F0F9FF",     // sky-50  — page background
+          accent: "#38BDF8",    // sky-400 — soft accent
+          lime: "#A3E635",      // lime-400 — fresh startup accent
+          limeDeep: "#84CC16",  // lime-500
         },
       },
       fontFamily: {
-        serif: ['var(--font-serif)', 'serif'], // Pour le côté "Corporate"
-        sans: ['var(--font-sans)', 'sans-serif'],
+        serif: ["var(--font-serif)", "serif"],
+        sans: ["var(--font-sans)", "sans-serif"],
       },
     },
   },
