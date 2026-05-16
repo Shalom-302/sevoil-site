@@ -1,19 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-  --color-sevoil-dark: #0C4A6E;
+  --color-sevoil-dark: #0F172A;
   --color-sevoil-primary: #0284C7;
   --color-sevoil-light: #F0F9FF;
   --color-sevoil-accent: #38BDF8;
-  --color-sevoil-lime: #A3E635;
-  --color-sevoil-lime-deep: #84CC16;
+  --color-sevoil-yellow: #FACC15;
+  --color-sevoil-yellow-deep: #EAB308;
 
-  --font-serif: "Playfair Display", serif;
-  --font-sans: "Inter", sans-serif;
+  --font-display: var(--font-display, "Space Grotesk"), "Inter", sans-serif;
+  --font-sans: var(--font-sans, "Inter"), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-sans), "Segoe UI", "Tahoma", sans-serif;
 }
 
 body {

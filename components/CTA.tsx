@@ -10,7 +10,7 @@ export default function CTA() {
   const { t } = useLanguage();
 
   return (
-    <section id="cta" className="relative overflow-hidden bg-sky-900 py-20">
+    <section id="cta" className="relative overflow-hidden bg-slate-900 py-20">
       <motion.div
         initial={{ scale: 1.1 }}
         whileInView={{ scale: 1 }}
@@ -28,7 +28,7 @@ export default function CTA() {
           transition={{ duration: 0.6 }}
           className="max-w-2xl text-white"
         >
-          <h2 className="text-3xl font-black sm:text-4xl lg:text-5xl leading-tight">
+          <h2 className="font-display text-3xl font-black sm:text-4xl lg:text-5xl leading-tight">
             {t.cta.title}
           </h2>
           <p className="mt-6 text-lg leading-8 text-sky-100/90">{t.cta.subtitle}</p>
@@ -44,10 +44,10 @@ export default function CTA() {
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
               href="#contact"
-              className="inline-flex w-full items-center justify-center gap-3 rounded-lg bg-lime-400 px-8 py-4 text-sm font-extrabold text-sky-900 shadow-xl transition hover:bg-lime-300"
+              className="inline-flex w-full items-center justify-center gap-3 rounded-lg bg-yellow-400 px-8 py-4 text-sm font-extrabold text-slate-900 shadow-xl transition hover:bg-yellow-300"
             >
               {t.cta.button1}
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="rtl-flip h-5 w-5" />
             </Link>
           </motion.div>
 

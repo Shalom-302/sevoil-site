@@ -28,10 +28,10 @@ export default function Process() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <p className="text-sm font-extrabold uppercase tracking-[0.25em] text-lime-600">
+          <p className="text-sm font-extrabold uppercase tracking-[0.25em] text-yellow-600">
             {t.process.eyebrow}
           </p>
-          <h2 className="mt-4 text-3xl font-black text-slate-900 sm:text-4xl">
+          <h2 className="font-display mt-4 text-3xl font-black text-slate-900 sm:text-4xl">
             {t.process.title}
           </h2>
         </motion.div>
@@ -48,15 +48,15 @@ export default function Process() {
             return (
               <motion.article key={step.title} variants={stepVariants} className="relative group">
                 <div className="relative z-10 rounded-3xl border border-slate-200 bg-sky-50/40 p-8 text-center shadow-sm transition-all duration-300 group-hover:bg-white group-hover:shadow-xl group-hover:-translate-y-2">
-                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-sky-900 text-lime-400 shadow-lg transition-transform duration-300 group-hover:rotate-12">
+                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-900 text-yellow-400 shadow-lg transition-transform duration-300 group-hover:rotate-12">
                     <Icon className="h-8 w-8" />
                   </div>
 
-                  <div className="mx-auto mt-6 flex h-8 w-8 items-center justify-center rounded-full bg-lime-400 text-xs font-black text-sky-900 shadow-sm">
+                  <div className="mx-auto mt-6 flex h-8 w-8 items-center justify-center rounded-full bg-yellow-400 text-xs font-black text-slate-900 shadow-sm">
                     {index + 1}
                   </div>
 
-                  <h3 className="mt-5 text-sm font-extrabold uppercase tracking-wide text-slate-900">
+                  <h3 className="font-display mt-5 text-sm font-extrabold uppercase tracking-wide text-slate-900">
                     {step.title}
                   </h3>
                   <p className="mt-4 text-sm leading-7 text-slate-600">{step.text}</p>

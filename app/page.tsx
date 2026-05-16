@@ -1,7 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Partners from "@/components/Partners";
 import Features from "@/components/Features";
 import About from "@/components/About";
+import Stats from "@/components/Stats";
 import MissionVision from "@/components/MissionVision";
 import Services from "@/components/Services";
 import PortCoverage from "@/components/PortCoverage";
@@ -15,8 +17,10 @@ export default function Home() {
     <main className="relative min-h-screen bg-white text-slate-900">
       <Navbar />
       <Hero />
+      <Partners />
       <Features />
       <About />
+      <Stats />
       <MissionVision />
       <Services />
       <PortCoverage />

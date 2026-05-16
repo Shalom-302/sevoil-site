@@ -28,10 +28,10 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <p className="text-sm font-extrabold uppercase tracking-[0.25em] text-lime-600">
+          <p className="text-sm font-extrabold uppercase tracking-[0.25em] text-yellow-600">
             {t.services.eyebrow}
           </p>
-          <h2 className="mt-3 text-3xl font-black text-slate-900 sm:text-4xl">
+          <h2 className="font-display mt-3 text-3xl font-black text-slate-900 sm:text-4xl">
             {t.services.title}
           </h2>
         </motion.div>
@@ -55,10 +55,10 @@ export default function Services() {
                 }}
                 className="rounded-3xl border border-slate-200 bg-sky-50/40 p-8 transition-colors hover:bg-white"
               >
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-900 text-lime-400">
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-900 text-yellow-400">
                   <Icon className="h-6 w-6" />
                 </div>
-                <h3 className="text-lg font-extrabold text-slate-900">{item.title}</h3>
+                <h3 className="font-display text-lg font-extrabold text-slate-900">{item.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-600">{item.text}</p>
               </motion.article>
             );

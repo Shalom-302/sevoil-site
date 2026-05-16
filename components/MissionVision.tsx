@@ -29,8 +29,8 @@ export default function MissionVision() {
       icon: Telescope,
       title: t.mission.visionTitle,
       text: t.mission.visionText,
-      accent: "from-lime-400 to-lime-600",
-      tone: "lime",
+      accent: "from-yellow-400 to-yellow-600",
+      tone: "yellow",
     },
   ];
 
@@ -48,10 +48,10 @@ export default function MissionVision() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="text-sm font-extrabold uppercase tracking-[0.25em] text-lime-600">
+          <p className="text-sm font-extrabold uppercase tracking-[0.25em] text-yellow-600">
             {t.mission.eyebrow}
           </p>
-          <h2 className="mt-3 text-3xl font-black text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2 className="font-display mt-3 text-3xl font-black text-slate-900 sm:text-4xl lg:text-5xl">
             {t.mission.title}
           </h2>
         </motion.div>
@@ -76,7 +76,7 @@ export default function MissionVision() {
                 <card.icon className="h-6 w-6" />
               </div>
 
-              <h3 className="text-2xl font-black text-slate-900">{card.title}</h3>
+              <h3 className="font-display text-2xl font-black text-slate-900">{card.title}</h3>
               <p className="mt-4 text-base leading-8 text-slate-600">{card.text}</p>
 
               <div className={`mt-8 h-1 w-16 rounded-full bg-gradient-to-r ${card.accent}`} />

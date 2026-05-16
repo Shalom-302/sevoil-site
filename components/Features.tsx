@@ -28,10 +28,10 @@ export default function Features() {
           viewport={{ once: true }}
           className="mb-12 text-center"
         >
-          <p className="text-sm font-extrabold uppercase tracking-[0.25em] text-lime-600">
+          <p className="text-sm font-extrabold uppercase tracking-[0.25em] text-yellow-600">
             {t.features.eyebrow}
           </p>
-          <h2 className="mt-3 text-3xl font-black text-slate-900 sm:text-4xl">
+          <h2 className="font-display mt-3 text-3xl font-black text-slate-900 sm:text-4xl">
             {t.features.title}
           </h2>
         </motion.div>
@@ -51,14 +51,14 @@ export default function Features() {
                 variants={itemVariants}
                 whileHover={{
                   scale: 1.04,
-                  borderColor: "#a3e635",
+                  borderColor: "#facc15",
                 }}
                 className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-colors duration-300 hover:bg-sky-50/40"
               >
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-900 text-lime-400">
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-900 text-yellow-400">
                   <Icon className="h-7 w-7" />
                 </div>
-                <h3 className="text-base font-extrabold text-slate-900">{item.title}</h3>
+                <h3 className="font-display text-base font-extrabold text-slate-900">{item.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-600">{item.text}</p>
               </motion.article>
             );

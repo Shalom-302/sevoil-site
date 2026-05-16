@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, MapPin, Phone, MailIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/components/LanguageProvider";
@@ -18,7 +19,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-sky-950 text-white overflow-hidden">
+    <footer className="bg-slate-900 text-white overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -28,11 +29,17 @@ export default function Footer() {
       >
         <div>
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-lime-400 text-lime-400">
-              <span className="text-lg font-extrabold">S</span>
+            <div className="relative h-12 w-12 overflow-hidden rounded-full border-2 border-yellow-400 bg-white">
+              <Image
+                src="/logosev.jpg"
+                alt="SEV-OIL logo"
+                fill
+                sizes="48px"
+                className="object-cover"
+              />
             </div>
             <div>
-              <p className="text-lg font-extrabold">SEV-OIL</p>
+              <p className="font-display text-lg font-extrabold">SEV-OIL</p>
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-200/80">
                 Maritime &amp; Logistique
               </p>
@@ -46,7 +53,7 @@ export default function Footer() {
           <div className="mt-8 flex gap-4">
             <Link
               href="#contact"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-sky-100 transition hover:bg-lime-400 hover:text-sky-900"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-sky-100 transition hover:bg-yellow-400 hover:text-slate-900"
             >
               <MailIcon className="h-4 w-4" />
             </Link>
@@ -54,13 +61,13 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-extrabold uppercase tracking-[0.18em] text-lime-400">
+          <h3 className="text-sm font-extrabold uppercase tracking-[0.18em] text-yellow-400">
             {t.footer.quickLinks}
           </h3>
           <ul className="mt-6 space-y-4 text-sm text-sky-100/80">
             {quickLinks.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="transition hover:text-lime-300">
+                <Link href={item.href} className="transition hover:text-yellow-300">
                   {item.label}
                 </Link>
               </li>
@@ -69,12 +76,12 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-extrabold uppercase tracking-[0.18em] text-lime-400">
+          <h3 className="text-sm font-extrabold uppercase tracking-[0.18em] text-yellow-400">
             {t.footer.servicesTitle}
           </h3>
           <ul className="mt-6 space-y-4 text-sm text-sky-100/80">
             {t.services.items.map((item) => (
-              <li key={item.title} className="transition hover:text-lime-300 cursor-default">
+              <li key={item.title} className="transition hover:text-yellow-300 cursor-default">
                 {item.title}
               </li>
             ))}
@@ -82,21 +89,21 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-extrabold uppercase tracking-[0.18em] text-lime-400">
+          <h3 className="text-sm font-extrabold uppercase tracking-[0.18em] text-yellow-400">
             {t.footer.contactTitle}
           </h3>
 
           <div className="mt-6 space-y-5 text-sm text-sky-100/80">
             <p className="flex items-start gap-4">
-              <Phone className="mt-1 h-4 w-4 text-lime-400 shrink-0" />
-              <span className="hover:text-white transition-colors cursor-pointer">+225 07 77 77 77 77</span>
+              <Phone className="mt-1 h-4 w-4 text-yellow-400 shrink-0" />
+              <span className="hover:text-white transition-colors cursor-pointer">+225 05 02 71 76 76</span>
             </p>
             <p className="flex items-start gap-4">
-              <Mail className="mt-1 h-4 w-4 text-lime-400 shrink-0" />
-              <span className="hover:text-white transition-colors cursor-pointer">info@sev-oil.ci</span>
+              <Mail className="mt-1 h-4 w-4 text-yellow-400 shrink-0" />
+              <span className="hover:text-white transition-colors cursor-pointer">sevemaritime@sev-oil.com</span>
             </p>
             <p className="flex items-start gap-4">
-              <MapPin className="mt-1 h-4 w-4 text-lime-400 shrink-0" />
+              <MapPin className="mt-1 h-4 w-4 text-yellow-400 shrink-0" />
               <span>{t.footer.address}</span>
             </p>
           </div>

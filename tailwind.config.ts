@@ -8,17 +8,17 @@ const config = {
     extend: {
       colors: {
         sevoil: {
-          dark: "#0C4A6E",      // sky-900 — deep brand
+          dark: "#0F172A",      // slate-900 — anthracite brand
           primary: "#0284C7",   // sky-600 — primary actions
           light: "#F0F9FF",     // sky-50  — page background
           accent: "#38BDF8",    // sky-400 — soft accent
-          lime: "#A3E635",      // lime-400 — fresh startup accent
-          limeDeep: "#84CC16",  // lime-500
+          yellow: "#FACC15",      // yellow-400 — fresh accent
+          yellowDeep: "#EAB308",  // yellow-500
         },
       },
       fontFamily: {
-        serif: ["var(--font-serif)", "serif"],
-        sans: ["var(--font-sans)", "sans-serif"],
+        display: ["var(--font-display)", "Inter", "sans-serif"],
+        sans: ["var(--font-sans)", "Inter", "sans-serif"],
       },
     },
   },

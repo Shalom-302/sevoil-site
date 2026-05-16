@@ -67,10 +67,10 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <p className="text-sm font-extrabold uppercase tracking-[0.25em] text-lime-600">
+            <p className="text-sm font-extrabold uppercase tracking-[0.25em] text-yellow-600">
               {t.about.eyebrow}
             </p>
-            <h2 className="mt-3 text-3xl font-black leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
+            <h2 className="font-display mt-3 text-3xl font-black leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
               {t.about.title}
             </h2>
             <p className="mt-6 max-w-xl text-base leading-8 text-slate-600 sm:text-lg">
@@ -90,7 +90,7 @@ export default function About() {
                 className="inline-flex items-center gap-3 rounded-lg bg-sky-700 px-8 py-4 text-sm font-extrabold text-white shadow-lg transition hover:bg-sky-800"
               >
                 {t.about.button}
-                <ArrowRight className="h-5 w-5 text-lime-300" />
+                <ArrowRight className="rtl-flip h-5 w-5 text-yellow-300" />
               </Link>
             </motion.div>
           </motion.div>
@@ -127,11 +127,11 @@ export default function About() {
                 transition={{ duration: 0.7, ease: "easeOut" }}
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
               >
-                <div className="flex h-32 w-32 flex-col items-center justify-center rounded-full bg-gradient-to-br from-sky-700 to-sky-900 text-center text-white shadow-xl">
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-lime-300">
+                <div className="flex h-32 w-32 flex-col items-center justify-center rounded-full bg-gradient-to-br from-sky-700 to-slate-900 text-center text-white shadow-xl">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-yellow-300">
                     {t.about.centerLabel}
                   </p>
-                  <p className="mt-1 px-3 text-sm font-extrabold leading-tight">
+                  <p className="font-display mt-1 px-3 text-sm font-extrabold leading-tight">
                     {t.about.centerTitle}
                   </p>
                 </div>
@@ -170,9 +170,9 @@ export default function About() {
                       sizes="100vw"
                       className="object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-sky-950/80 via-sky-950/30 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/30 to-transparent" />
                     <div className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/15 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-md">
-                      <Icon className="h-3 w-3 text-lime-300" />
+                      <Icon className="h-3 w-3 text-yellow-300" />
                       {s.label}
                     </div>
                     <div className="absolute inset-x-4 bottom-4 text-white">
@@ -233,9 +233,9 @@ function OrbitImage({
           sizes="180px"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-sky-950/85 via-sky-950/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
         <div className="absolute left-2 top-2 inline-flex items-center gap-1 rounded-full border border-white/20 bg-white/15 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-white backdrop-blur">
-          <Icon className="h-2.5 w-2.5 text-lime-300" />
+          <Icon className="h-2.5 w-2.5 text-yellow-300" />
           {sector.label}
         </div>
         <div className="absolute inset-x-2 bottom-2 text-white">
